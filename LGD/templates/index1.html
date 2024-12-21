@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&D Management Application</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Learning and Development Management</h1>
+        <nav class="nav">
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Training Requests</a></li>
+                    <li><a href="#">Course Management</a></li>
+                    <li><a href="#">Progress Tracking</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Notifications</a></li>
+                </ul>
+            </div>
+            <div id="loginsignup-btn" class="nav-button" style="text-align: right;">
+                <a href="{% url 'LogOut' %}">
+                    <button class="btn" id="loginbtn">LogOut</button>
+                </a>
+                
+            </div>            
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section id="description-box">
+        <h2>Welcome to LearningHub</h2>
+        <p style="text-align: center;">
+            In large organizations, the Learning and Development (L&D) team plays a crucial role in upskilling employees,
+            ensuring compliance with training requirements, and fostering a culture of continuous learning. However, managing
+            multiple training programs, tracking employee progress, and ensuring the relevance of content across diverse roles
+            can be challenging. L&D teams often struggle with coordinating training schedules, personalizing learning paths,
+            and gathering feedback to improve future programs. Additionally, with remote and hybrid work models becoming more
+            prevalent, traditional in-person training methods are less feasible, requiring a shift to digital solutions.
+        </p>
+    </section>
+</body>
+</html>
